@@ -1,0 +1,20 @@
+[
+  {
+    "id": "special_relativity_1905",
+    "claim": "The Nobel biographical record identifies Einstein's 1905 special theory of relativity as a major work.",
+    "source_ids": ["nobel_einstein_biographical"],
+    "handling": "This is a high-level source summary; detailed explanations require additional technical sources."
+  },
+  {
+    "id": "general_relativity_1916",
+    "claim": "The Nobel biographical record states that Einstein published his paper on the general theory of relativity in 1916.",
+    "source_ids": ["nobel_einstein_biographical"],
+    "handling": "Attribute the date to this source; do not imply that this record independently evaluates the scientific history."
+  },
+  {
+    "id": "nobel_physics_1921",
+    "claim": "Einstein received the 1921 Nobel Prize in Physics; the Nobel biographical record names work on the photoelectric effect among his important achievements.",
+    "source_ids": ["nobel_einstein_biographical"],
+    "handling": "Do not say that the Nobel Prize was awarded for relativity."
+  }
+]
