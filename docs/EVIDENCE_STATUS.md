@@ -23,7 +23,7 @@ Labels describe what this repository demonstrates; they are not a numerical conf
 | Human authenticity or historical voice | UNVALIDATED | No human-subject or historian evaluation has been performed. |
 | Security, privacy, and misuse resistance | UNVALIDATED | No independent review, penetration test, or privacy assessment has been performed. |
 | Broader source coverage and multilingual safety | TARGET | Requires careful primary-source curation and expert review. |
-| GitHub Actions on hosted runners | UNRUN until a hosted workflow completes | The workflow is configured for Python 3.11 and 3.12; local CI does not prove remote runner success. |
+| GitHub Actions on hosted runners | IMPLEMENTED | [Run 38079926330](https://github.com/sparkainlp-x/max-slate-einstein/actions/runs/38079926330) passed both Python 3.11 and 3.12 jobs for commit `986d9ddb9bef62bcbf13ef144fd63433eff5cbb9`; later commits require their own run. |
 | Independent reproducibility of author measurements | REPORTED only where measured | No performance or accuracy measurements are claimed here. |
 
 The local test/lint/compile/JSON results are reported in the project release commit or task report. A passing test suite does not upgrade historical claims to independent validation.
