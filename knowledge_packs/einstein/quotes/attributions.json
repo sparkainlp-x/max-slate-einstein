@@ -1,0 +1,11 @@
+[
+  {
+    "id": "insanity_repetition_attribution",
+    "text": "Insanity is doing the same thing over and over again and expecting a different result.",
+    "attributed_to": "Albert Einstein",
+    "status": "DISPUTED",
+    "source_ids": ["quote_investigator_insanity", "einstein_papers_editorial_method"],
+    "assessment": "Quote Investigator reports no substantive evidence that Einstein wrote or spoke this saying and describes documented variants appearing decades after his death. The Einstein Papers Project editorial method describes the kind of source-based checking appropriate for primary texts; it is not itself evidence about this saying.",
+    "display_policy": "Never present as Einstein's words. If discussed, retain the DISPUTED label and the secondary-source caveat."
+  }
+]

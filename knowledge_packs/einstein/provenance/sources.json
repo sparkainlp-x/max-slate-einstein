@@ -1,0 +1,55 @@
+[
+  {
+    "id": "nobel_einstein_biographical",
+    "title": "Albert Einstein – Biographical",
+    "publisher": "Nobel Prize Outreach / Nobel Foundation",
+    "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
+    "source_type": "institutional_biographical_record",
+    "accessed_on": "2026-10-10",
+    "supports": [
+      "birth date and place",
+      "death date and place",
+      "selected biographical and scientific milestones"
+    ],
+    "limits": "The page reproduces a biography written at the time of the 1921 award; use it as a cited institutional record, not as exhaustive or independently re-evaluated historical scholarship."
+  },
+  {
+    "id": "ias_einstein_profile",
+    "title": "Albert Einstein",
+    "publisher": "Institute for Advanced Study",
+    "url": "https://www.ias.edu/scholars/einstein",
+    "source_type": "institutional_faculty_profile",
+    "accessed_on": "2026-10-10",
+    "supports": [
+      "lifespan 1879–1955",
+      "Institute faculty service from 1933 to 1946 and emeritus status from 1946 to 1955"
+    ],
+    "limits": "A brief faculty profile, not a comprehensive biography."
+  },
+  {
+    "id": "einstein_papers_editorial_method",
+    "title": "Editorial Method",
+    "publisher": "Einstein Papers Project, California Institute of Technology",
+    "url": "https://www.einstein.caltech.edu/what-we-do/editorial-method",
+    "source_type": "critical_edition_editorial_method",
+    "accessed_on": "2026-10-10",
+    "supports": [
+      "use of manuscripts and original-language publications as primary texts where available",
+      "document context, transcription policy, variants, and editorial notes"
+    ],
+    "limits": "A methodology source; it does not establish the provenance of every quotation in circulation."
+  },
+  {
+    "id": "quote_investigator_insanity",
+    "title": "Quote Origin: Insanity Is Doing the Same Thing Over and Over Again and Expecting Different Results",
+    "publisher": "Quote Investigator",
+    "url": "https://quoteinvestigator.com/2017/03/23/same/",
+    "source_type": "secondary_quotation_provenance_investigation",
+    "accessed_on": "2026-10-10",
+    "supports": [
+      "the attribution to Einstein is unsupported by substantive evidence in the investigation",
+      "early documented formulations appear in 1981, decades after Einstein's death"
+    ],
+    "limits": "A secondary quotation-history investigation, not a primary Einstein document or a substitute for checking the cited archival records. The attribution is marked DISPUTED, not adjudicated here as proof of authorship by another person."
+  }
+]

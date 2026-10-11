@@ -1,0 +1,23 @@
+[
+  {
+    "id": "einstein_lifespan",
+    "claims": {
+      "born": "1879-03-14",
+      "birthplace": "Ulm, Württemberg, Germany",
+      "died": "1955-04-18",
+      "deathplace": "Princeton, New Jersey, United States"
+    },
+    "source_ids": ["nobel_einstein_biographical", "ias_einstein_profile"],
+    "handling": "Use dates as a hard first-person boundary. This record is a source-linked summary, not an exhaustive biography."
+  },
+  {
+    "id": "einstein_ias_service",
+    "claims": {
+      "faculty_start": "1933-09",
+      "faculty_end": "1946-06",
+      "emeritus_end": "1955-04"
+    },
+    "source_ids": ["ias_einstein_profile"],
+    "handling": "Preserve the profile's institutional timeline; do not extrapolate beyond this record."
+  }
+]
