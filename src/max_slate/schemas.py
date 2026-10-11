@@ -29,3 +29,9 @@ class Answer:
     persona_id: str
     text: str
     route: RouteDecision
+    source_ids: tuple[str, ...] = ()
+    quote_status: str | None = None
+    uncertainty: str = ""
+    evidence: str = "IMPLEMENTED"
+    simulation: bool = True
+    identity: str = "Educational simulation inspired by Einstein; not Albert Einstein."

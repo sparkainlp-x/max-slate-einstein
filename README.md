@@ -57,3 +57,13 @@ ruff check src tests
 - `docs/` — architecture, policy, threat, accessibility, evidence, examples, and roadmap.
 
 See [Evidence Status](docs/EVIDENCE_STATUS.md) for what is implemented, synthetic, targeted, unrun, or unvalidated. See [Sources and provenance](knowledge_packs/einstein/provenance/sources.json) for source records and their limits.
+
+## Optional curated evidence and structured output
+
+```bash
+max-slate ask --persona einstein --question "Explain time dilation simply." --evidence --json
+```
+
+`--evidence` adds a small source-linked historical answer and quotation-check inventory; defaults remain the fixed responses described above. `--json` exposes identity, simulation status, evidence, source IDs, and uncertainty for future adapters. Exact ISO dates after 1955-04-18 also select educator mode. Broad modern educator explanations, speech, lip-sync, hosting, and holographic-fan output remain **TARGET**.
+
+See [Compatible evidence improvements](docs/EVIDENCE_IMPROVEMENTS.md) for provenance, quotation scope, inherited routing precedence, and limitations. The inherited question-hash audit is not anonymization; do not submit real personal data. This engine is not a general-purpose LLM and does not modify the separate beaver website.

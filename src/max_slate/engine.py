@@ -83,13 +83,21 @@ def validate_persona(persona: Any) -> None:
 
 
 def answer_question(
-    question: str | None, persona_path: str | Path = DEFAULT_PERSONA_PATH
+    question: str | None,
+    persona_path: str | Path = DEFAULT_PERSONA_PATH,
+    *,
+    use_evidence: bool = False,
 ) -> Answer:
-    """Return a deterministic fixed response for the selected route."""
+    """Return compatible fixed responses, or opt-in local curated evidence."""
     persona = read_persona(persona_path)
     decision = route_question(question)
-    return Answer(
+    answer = Answer(
         persona_id=persona["id"],
         text=RESPONSE_TEXT[decision.mode],
         route=decision,
     )
+    if use_evidence:
+        from max_slate.evidence import enrich_answer
+
+        return enrich_answer(question, answer)
+    return answer

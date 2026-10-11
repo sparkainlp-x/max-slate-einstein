@@ -1,0 +1,153 @@
+{
+  "sources": [
+    {
+      "id": "nobel-facts",
+      "title": "Albert Einstein – Facts",
+      "publisher": "NobelPrize.org",
+      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/facts/",
+      "checked": "2026-10-11",
+      "kind": "institutional biography"
+    },
+    {
+      "id": "ias-brief",
+      "title": "Albert Einstein: In Brief",
+      "publisher": "Institute for Advanced Study / American Institute of Physics",
+      "url": "https://www.ias.edu/albert-einstein-brief",
+      "checked": "2026-10-11",
+      "kind": "institutional historical exhibit"
+    },
+    {
+      "id": "nobel-lecture",
+      "title": "Fundamental ideas and problems of the theory of relativity",
+      "publisher": "NobelPrize.org / Nobel Foundation",
+      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/lecture/",
+      "checked": "2026-10-11",
+      "kind": "quotation provenance reference; no transcript excerpt stored"
+    },
+    {
+      "id": "qi-fish",
+      "title": "Quote Origin: Everybody is a Genius … Fish … Climb a Tree",
+      "publisher": "Quote Investigator",
+      "url": "https://quoteinvestigator.com/2013/04/06/fish-climb/",
+      "checked": "2026-10-11",
+      "kind": "quotation attribution investigation"
+    },
+    {
+      "id": "openstax-time",
+      "title": "University Physics Volume 3, 5.3 Time Dilation",
+      "publisher": "OpenStax / Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/5-3-time-dilation",
+      "checked": "2026-10-11",
+      "kind": "modern textbook explaining established historical theory"
+    }
+  ],
+  "facts": [
+    {
+      "id": "lifespan",
+      "domains": [
+        "biography"
+      ],
+      "terms": [
+        "born",
+        "birth",
+        "died",
+        "death",
+        "lifespan",
+        "biography"
+      ],
+      "text": "Albert Einstein was born on 14 March 1879 in Ulm and died on 18 April 1955 in Princeton. This software is an educational simulation, not Einstein.",
+      "sources": [
+        "nobel-facts"
+      ],
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "nobel",
+      "domains": [
+        "physics_history"
+      ],
+      "terms": [
+        "nobel",
+        "photoelectric",
+        "photon"
+      ],
+      "text": "Einstein received the 1921 Nobel Prize in Physics, awarded in 1922, especially for discovering the law of the photoelectric effect. His explanation connected light quanta with frequency-dependent energy; the award was not specifically for relativity.",
+      "sources": [
+        "nobel-facts"
+      ],
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "relativity",
+      "domains": [
+        "relativity"
+      ],
+      "terms": [
+        "relativity",
+        "time dilation",
+        "gravity",
+        "mass energy",
+        "e=mc"
+      ],
+      "text": "Einstein's 1905 work developed special relativity and the mass–energy relation. His 1915 general theory of relativity changed the understanding of gravity. A simple account of time dilation is that clocks following different motions can accumulate different elapsed times; this is not a claim that a person feels their own clock slowing.",
+      "sources": [
+        "ias-brief",
+        "openstax-time"
+      ],
+      "status": "IMPLEMENTED",
+      "qualification": "Educational paraphrase, not an Einstein quotation. IAS supports historical milestones; OpenStax explains the clock comparison. The modern textbook's publication does not turn an explanation of a pre-1955 theory into Einstein's personal experience."
+    },
+    {
+      "id": "ias",
+      "domains": [
+        "biography"
+      ],
+      "terms": [
+        "princeton",
+        "institute for advanced study"
+      ],
+      "text": "Einstein joined the Institute for Advanced Study in Princeton in 1933 after refusing to live under the Nazi government in Germany.",
+      "sources": [
+        "ias-brief"
+      ],
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "peace",
+      "domains": [
+        "philosophy"
+      ],
+      "terms": [
+        "pacifism",
+        "peace",
+        "civic",
+        "civil liberties"
+      ],
+      "text": "Einstein supported peace and civil liberties, while his position on strict pacifism changed with the Nazi threat. A careful account should preserve that historical context rather than invent a single timeless position.",
+      "sources": [
+        "ias-brief"
+      ],
+      "status": "IMPLEMENTED"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "science-excerpt",
+      "text": "our science, measured against reality, is primitive and childlike",
+      "status": "VERIFIED",
+      "sources": [
+        "ias-brief"
+      ],
+      "qualification": "Exact short excerpt reproduced in the IAS institutional exhibit; verified against that secondary source, not independently against the original document."
+    },
+    {
+      "id": "fish-disputed",
+      "text": "Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid.",
+      "status": "DISPUTED",
+      "sources": [
+        "qi-fish"
+      ],
+      "qualification": "Quote Investigator finds no substantive evidence connecting Einstein to this statement; a close match appears in 2004, after his death. Stored for attribution checking, not emitted as an Einstein quote."
+    }
+  ]
+}

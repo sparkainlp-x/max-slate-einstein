@@ -34,7 +34,7 @@ package-dir = { "" = "src" }
 include-package-data = true
 
 [tool.setuptools.package-data]
-max_slate = ["personas/*.json"]
+max_slate = ["personas/*.json", "knowledge/*.json"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

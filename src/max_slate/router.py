@@ -1,6 +1,8 @@
 """Deterministic classification; this module performs no network or model calls."""
 
 import re
+import unicodedata
+from datetime import date
 
 from max_slate.schemas import RouteDecision, RouteMode
 
@@ -68,15 +70,32 @@ def route_question(question: str | None) -> RouteDecision:
     if not isinstance(question, str) or not question.strip():
         return RouteDecision(RouteMode.UNKNOWN, "empty_or_non_text_question")
 
-    text = question.strip()
+    text = " ".join(unicodedata.normalize("NFKC", question).split())
+    if len(question) > 2000:
+        return RouteDecision(RouteMode.REFUSE, "question_too_long")
+    if re.search(
+        r"\b(?:pretend|claim|act)\b.*\b(?:albert einstein|sentient|consciousness)\b", text, re.I
+    ):
+        return RouteDecision(RouteMode.REFUSE, "identity_impersonation")
+    if re.search(
+        r"\b(?:invent|fabricate|make up)\b.*\b(?:biography|memory|einstein|quote)\b", text, re.I
+    ):
+        return RouteDecision(RouteMode.REFUSE, "fabrication_request")
     if any(pattern.search(text) for pattern in _HARMFUL_PATTERNS):
         return RouteDecision(RouteMode.REFUSE, "harmful_instruction")
     if any(pattern.search(text) for pattern in _PROFESSIONAL_ADVICE_PATTERNS):
         return RouteDecision(RouteMode.REFUSE, "professional_advice")
+    after_lifetime = False
+    for value in re.findall(r"\b\d{4}-\d{2}-\d{2}\b", text):
+        try:
+            after_lifetime |= date.fromisoformat(value) > date(1955, 4, 18)
+        except ValueError:
+            pass
     if (
         _POST_1955_YEAR.search(text)
         or _POST_1955_REFERENCE.search(text)
         or any(pattern.search(text) for pattern in _MODERN_PATTERNS)
+        or after_lifetime
     ):
         return RouteDecision(RouteMode.EDUCATOR, "post_1955_or_modern_topic")
     if any(pattern.search(text) for pattern in _QUOTE_PATTERNS):
