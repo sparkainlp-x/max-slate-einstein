@@ -1,12 +1,38 @@
 cff-version: 1.2.0
-message: "If you use this research prototype, cite it as software and preserve its stated limitations."
-title: "Max Slate Einstein"
+message: "If you use this software, please cite it using the metadata in this file."
+title: "Max Slate Einstein: bounded, evidence-aware educational character engine (research prototype)"
 type: software
-abstract: >-
-  Offline-first, bounded character engine for an Einstein-inspired educational avatar.
-  This educational simulation makes no claim that Albert Einstein is speaking through it.
 authors:
-  - family-names: "Max Slate Einstein contributors"
-license: MIT
+  - family-names: Brisson
+    given-names: Jean-François
+    affiliation: "Spark AI NLP, Fredericton, New Brunswick, Canada"
+    orcid: "https://orcid.org/0009-0000-9778-5374"
 repository-code: "https://github.com/sparkainlp-x/max-slate-einstein"
-version: 0.1.0
+url: "https://sparkainlpx.xyz"
+abstract: >-
+  Max Slate Einstein is an offline-first Python prototype of a bounded
+  character engine for an Einstein-inspired educational avatar. It prefers a
+  small, deterministic, policy-bounded response over unsupported elaboration.
+  It separates persona policy, local source-linked knowledge records, session
+  memory policy, routing and safety, and the response pipeline. Historical
+  questions go to an evidence-conscious fallback, quote-attribution questions
+  to a quote check (VERIFIED, DISPUTED or UNSOURCED), unsafe and professional-
+  advice requests to refusal, and topics after 1955 or modern technology to an
+  educator mode. Scope: an educational simulation. It does not claim that
+  Albert Einstein speaks through it, nor sentience, autonomy or historical
+  authenticity. It is not medical, legal, financial or safety-critical
+  software, it uses no remote model, and long-term memory is disabled by
+  default. Synthetic tests establish deterministic software behaviour only; no
+  independent human, historical or security evaluation has been performed.
+keywords:
+  - research software
+  - educational technology
+  - character engine
+  - quote attribution
+  - safety policy
+  - offline-first
+  - Python
+  - New Brunswick
+license: MIT
+version: "0.1.0"
+date-released: "2026-10-11"
