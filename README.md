@@ -1,5 +1,7 @@
 # Max Slate Einstein
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23307947.svg)](https://doi.org/10.5281/zenodo.23307947)
+
 Offline-first, bounded character engine for an Einstein-inspired educational avatar.
 
 > Design principle: maximize persona consistency and evidence quality—not the number of questions answered.
@@ -57,3 +59,7 @@ ruff check src tests
 - `docs/` — architecture, policy, threat, accessibility, evidence, examples, and roadmap.
 
 See [Evidence Status](docs/EVIDENCE_STATUS.md) for what is implemented, synthetic, targeted, unrun, or unvalidated. See [Sources and provenance](knowledge_packs/einstein/provenance/sources.json) for source records and their limits.
+
+## Cite
+
+Concept DOI (all versions): [10.5281/zenodo.23307947](https://doi.org/10.5281/zenodo.23307947). v0.1.0: [10.5281/zenodo.23307948](https://doi.org/10.5281/zenodo.23307948). See [CITATION.cff](CITATION.cff).
